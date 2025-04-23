@@ -19,8 +19,9 @@
                 <img src="{{ article.image.url }}" alt="{{ article.title }}">
             {% endif %}
             
-            <p>{{ article.summary }}</p>
-            
+          
+            <p>{{ article.content|truncate_words_html:30 }}</p>  
+
             <div class="article-tags">
                 {% for tag in article.tags.all %}
                     <a href="{{ tag.get_absolute_url }}" style="margin-right: 5px;">#{{ tag.name }}</a>
