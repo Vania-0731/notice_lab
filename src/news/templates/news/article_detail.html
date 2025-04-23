@@ -25,6 +25,12 @@
             {{ article.content|linebreaks }}
         </div>
         
+        {% load news_extras %}
+
+        <div class="reading-time">
+            {{ article.content|reading_time }}
+        </div>
+
         <div class="article-tags">
             <h4>Tags:</h4>
             {% for tag in article.tags.all %}
