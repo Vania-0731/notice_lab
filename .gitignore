@@ -1,0 +1,13 @@
+# Ignora los archivos de log
+*.log
+
+# Ignora la carpeta node_modules
+node_modules/
+
+# Ignora los archivos .pyc y .pyo
+*.pyc
+*.pyo
+
+# Ignora los archivos temporales de Eclipse
+.DS_Store
+*.tmp
